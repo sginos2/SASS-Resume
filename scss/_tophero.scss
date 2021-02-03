@@ -1,0 +1,51 @@
+@use 'base';
+
+.tophero {
+    background-image:  url(../blurred-cityscape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .picture {
+        background-image: url(../shan.jpg);
+        width: 200px;
+        height: 200px;
+        background-position: 50% 40%;
+        border-radius: 100px;
+        background-size: cover;
+    }
+
+    .topinfo {
+        color: white;
+        background-color: rgba($color: base.$lightgray, $alpha: 0.8);
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        text-align: left;
+        margin: 30px;
+        padding: 0px 10px;
+        border-radius: 5px;
+
+        .name {
+            text-transform: uppercase;
+        
+            h1 {
+                font-size: 3.5em;
+                font-weight: 600;
+                letter-spacing: 2px;
+                margin: 0px;
+            }
+        }
+        .jobtitle {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            padding: 5px;
+            margin: 0px;
+        }
+    }
+
+}

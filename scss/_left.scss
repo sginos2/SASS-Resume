@@ -1,0 +1,56 @@
+@use 'base';
+
+%myheadings {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.leftside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    color: base.$darkblue;
+
+    .personal {
+        
+
+        h2 {
+            @extend %myheadings;
+        }
+
+        p {
+            margin-top: 0px;
+        }
+    }
+
+    .contact {
+
+        h2 {
+            @extend %myheadings;
+        }
+
+        p {
+            margin-top: 0px;
+        }
+    }
+
+    .education {
+
+        h2{
+            @extend %myheadings;
+        }
+
+        p {
+            margin-top: 0px;
+
+            span {
+                font-style: italic;
+            }
+        }
+    }
+}
