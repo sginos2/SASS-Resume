@@ -1,5 +1,10 @@
 @use 'base';
 
+@mixin imageDimensions {
+    width: 200px;
+    height: 200px;
+}
+
 .tophero {
     background-image:  url(../blurred-cityscape.jpg);
     background-repeat: no-repeat;
@@ -11,9 +16,8 @@
     padding: 20px;
 
     .picture {
+        @include imageDimensions();
         background-image: url(../shan.jpg);
-        width: 200px;
-        height: 200px;
         background-position: 50% 40%;
         border-radius: 100px;
         background-size: cover;
@@ -36,9 +40,7 @@
             h1 {
                 font-size: 3.5em;
                 font-weight: 600;
-                letter-spacing: 2px;
-                margin: 0px;
-            }
+                letter-spacing: 2px;            }
         }
         .jobtitle {
             text-transform: uppercase;

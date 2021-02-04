@@ -4,9 +4,17 @@ $lightblue: #93A3B1;
 $lightgray: #dadfea;
 $myfontsize: 0.9em;
 
-body {
+@mixin removePresets {
     margin: 0;
     padding: 0;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+body {
+    @include removePresets();
     font-family: 'Poppins', sans-serif;
     font-size: $myfontsize;
     background-color: $lightblue;
