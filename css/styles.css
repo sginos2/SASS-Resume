@@ -38,16 +38,17 @@ body {
 .tophero .topinfo .name {
   text-transform: uppercase;
 }
-.tophero .topinfo .name h1 {
+.tophero .topinfo .name p {
   font-size: 3.5em;
   font-weight: 600;
   letter-spacing: 2px;
+  margin: 10px 0px;
 }
 .tophero .topinfo .jobtitle {
   text-transform: uppercase;
   font-size: 1.5em;
   padding: 5px;
-  margin: 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 .rightside .skills h2, .rightside .experience h2, .rightside .experience h4, .leftside .education h2, .leftside .contact h2, .leftside .personal h2 {
@@ -57,13 +58,11 @@ body {
 }
 
 .leftside {
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin: 10px;
   padding: 0px 20px;
-  margin: 0 auto;
   color: #3A606E;
 }
 .leftside .personal p {
@@ -80,22 +79,17 @@ body {
 }
 
 .rightside {
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #dadfea;
-  padding: 0px 10px;
+  padding: 0px 20px;
   color: #3A606E;
-}
-.rightside .skills {
-  margin: 0 auto;
 }
 .rightside .skills ul {
   margin-left: -20px;
   margin-top: 0px;
-}
-.rightside .experience {
-  margin: 0 auto;
 }
 .rightside .experience h4:nth-of-type(1) {
   margin-top: 0px;
@@ -109,6 +103,16 @@ body {
   margin-top: 0px;
 }
 
+@media (max-width: 992px) {
+  .rightside {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .rightside {
+    padding-left: 20px;
+  }
+}
 .container {
   width: 60%;
   margin: 0 auto;
@@ -119,6 +123,77 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .tophero .topinfo {
+    text-align: center;
+  }
+  .tophero .topinfo .name p {
+    margin: 15px;
+    line-height: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 992px) {
+  .tophero .topinfo {
+    text-align: center;
+  }
+  .tophero .topinfo .name p {
+    margin: 15px;
+    line-height: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .tophero {
+    display: flex;
+    flex-direction: column;
+  }
+  .tophero .topinfo {
+    text-align: center;
+  }
+  .tophero .topinfo .name p {
+    margin: 15px;
+    line-height: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .leftside, .main .rightside {
+    width: auto;
+  }
+}
+@media (max-width: 576px) {
+  .tophero {
+    display: flex;
+    flex-direction: column;
+  }
+  .tophero .topinfo {
+    text-align: center;
+  }
+  .tophero .topinfo .name p {
+    margin: 15px;
+    line-height: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .leftside, .main .rightside {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

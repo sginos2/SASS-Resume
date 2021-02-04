@@ -3,14 +3,19 @@ $mediumblue: #607B7D;
 $lightblue: #93A3B1;
 $lightgray: #dadfea;
 $myfontsize: 0.9em;
+$xlwindow: 1200px;
+$largewindow: 992px;
+$mediumwindow: 768px;
+$smallwindow: 576px;
 
 @mixin removePresets {
     margin: 0;
     padding: 0;
 }
 
-@mixin uppercase {
-    text-transform: uppercase;
+@mixin imageDimensions {
+    width: 200px;
+    height: 200px;
 }
 
 body {

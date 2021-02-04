@@ -3,8 +3,6 @@
 @use 'left';
 @use 'right';
 
-
-
 .container {
     width: 60%;
     margin: 0 auto;
@@ -15,4 +13,98 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+
+@media (max-width: base.$xlwindow) {
+    
+    .tophero {
+        .topinfo {
+            text-align: center;
+            .name {
+                p {
+                    margin: 15px;
+                    line-height: 100%; 
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: base.$largewindow) {
+
+    .tophero {
+        .topinfo {
+            text-align: center;
+            .name {
+                p {
+                    margin: 15px;
+                    line-height: 100%; 
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: base.$mediumwindow) {
+    
+    .tophero {
+        display: flex;
+        flex-direction: column;
+
+        .topinfo {
+            text-align: center;
+            .name {
+                p {
+                    margin: 15px;
+                    line-height: 100%; 
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    
+        .leftside, .rightside {
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: base.$smallwindow) {
+
+    .tophero {
+        display: flex;
+        flex-direction: column;
+        
+        .topinfo {
+            text-align: center;
+            .name {
+                p {
+                    margin: 15px;
+                    line-height: 100%; 
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .leftside, .rightside {
+            width: auto;
+        }
+    }
 }

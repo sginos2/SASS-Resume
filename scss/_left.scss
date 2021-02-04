@@ -7,13 +7,11 @@
 }
 
 .leftside {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 10px;
     padding: 0px 20px;
-    margin: 0 auto;
     color: base.$darkblue;
 
     .personal {
